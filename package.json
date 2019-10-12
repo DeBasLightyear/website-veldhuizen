@@ -1,0 +1,54 @@
+{
+  "name": "perspakket-veldhuizen",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.6.4",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "sass": "^1.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeBasLightyear/website-veldhuizen"
+  },
+  "author": {
+    "name": "Bas Kleisen"
+  },
+  "license": "Copyright",
+  "bugs": {
+    "url": "https://github.com/DeBasLightyear/website-veldhuizen/issues"
+  },
+  "homepage": "https://github.com/DeBasLightyear/website-veldhuizen#readme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
