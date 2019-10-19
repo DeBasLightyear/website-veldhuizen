@@ -3,7 +3,7 @@ import React from 'react';
 const Products = () => {
     return (
         <div>
-            Home
+            Error: Pagina is niet gevonden
         </div>
     )
 }

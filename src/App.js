@@ -1,27 +1,25 @@
 import React from 'react';
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import Contact from './pages/Contact';
-import AboutUs from './pages/AboutUs';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Products from './components/Products';
+import Contact from './components/Contact';
+import AboutUs from './components/AboutUs';
+import Error from './components/Error';
+import Navigation from './components/Navigation';
 import './css/styles.min.css';
 
 function App() {
   return (
   <BrowserRouter>
-    <div className="App">
-      <header className="App-header">
-        <Link to="/">
-          <img className="App-logo" alt="logo" />
-        </Link>
-        <h1 className="App-title">Welcome to React</h1>
-        <Link to="/">Home</Link> <Link to="/post/">Post</Link>
-      </header>
-      <Switch>
-        {/* <Route exact path="/" component={Home} />
-        <Route path="/post/" component={Post} /> */}
-      </Switch>
-    </div>
+    <Navigation />
+    <Switch>
+      <Route path="/" component={Home} exact/>
+      <Route path="/AboutUs" component={AboutUs} />
+      <Route path="/Products" component={Products} />
+      <Route path="/Contact" component={Contact} />
+
+      <Route component={Error} />
+    </Switch>
   </BrowserRouter>
   );
 }
