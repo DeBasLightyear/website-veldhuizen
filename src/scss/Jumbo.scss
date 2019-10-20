@@ -1,0 +1,19 @@
+.jumbotron-farm {
+    background: url('../img/farm_cropped.jpg') no-repeat bottom;
+    background-size: cover;
+    color: #ccc;
+    height: 600px;
+    position: relative;
+    z-index: -2;
+}
+
+.overlay-jumbo {
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
