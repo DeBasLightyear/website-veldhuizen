@@ -1,9 +1,17 @@
-// primary colors: regular, light and dark
-$primaryColor: (
-    (#00cc00, #62ff4b, #009900)
+// Color palette
+$colors: (
+    primary: (
+        base: #00cc00,
+        light: #62ff4b,
+        dark: #009900
+    ),
+    secondary: (
+        base: #005ff7,
+        light: #698cff,
+        dark: #0037c3
+    )
 );
 
-// secondary colors: regular, light and dark
-$secondaryColor: (
-    (#005ff7, #698cff, #0037c3)
-);
+@function color($color, $tone: 'base') {
+    @return map-get(map-get($colors, $color), $tone);
+  }

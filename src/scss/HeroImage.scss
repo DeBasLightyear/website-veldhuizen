@@ -1,21 +1,19 @@
 @import './constants.scss';
 
-.jumbotron-farm {
+.hero-image-farm { 
     background: url('../img/farm_cropped.jpg') no-repeat bottom;
     background-size: cover;
     color: #ccc;
     height: 100%;
     position: relative;
     z-index: -2;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 
-.overlay-jumbo {
-    background-color: #000;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.24rem;
+    }
+  }

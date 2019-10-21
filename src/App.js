@@ -7,7 +7,7 @@ import AboutUs from './Pages/AboutUs';
 import Error from './Pages/Error';
 import Navigation from './components/Navigation';
 import Layout from './components/Layout';
-import Jumbo from './components/Jumbo';
+import HeroImage from './components/HeroImage';
 import './css/styles.min.css';
 
 function App() {
@@ -15,16 +15,13 @@ function App() {
     <React.Fragment>
       <BrowserRouter>
         <Navigation />
-        <Jumbo />
-        <Layout>        
-          <Switch>
-            <Route path="/" component={Home} exact/>
-            <Route path="/AboutUs" component={AboutUs} />
-            <Route path="/Products" component={Products} />
-            <Route path="/Contact" component={Contact} />
-            <Route component={Error} />
-          </Switch>
-        </Layout>
+        <Switch>
+          <Route path="/" component={Home} exact/>
+          <Route path="/AboutUs" component={AboutUs} />
+          <Route path="/Products" component={Products} />
+          <Route path="/Contact" component={Contact} />
+          <Route component={Error} />
+        </Switch>
       </BrowserRouter>
     </React.Fragment>
   );
