@@ -5,7 +5,7 @@ import Jumbo from '../components/Jumbo';
 const Products = () => {
     return (
         <div>
-
+            <Jumbo />
             <Layout>
                 <h1>
                     Producten
