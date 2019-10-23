@@ -1,12 +1,22 @@
 @import './constants.scss';
 
-.jumbotron-farm {
-    background: url('../img/farm_cropped.jpg') no-repeat bottom;
+
+.jumbotron-base {
     background-size: cover;
     color: #ccc;
     height: 100%;
     position: relative;
     z-index: -2;
+}
+
+.jumbotron-farm {
+    @extend .jumbotron-base;
+    background: url('../img/farm_cropped.jpg') no-repeat bottom;
+}
+
+.jumbotron-grain {
+    @extend .jumbotron-base;
+    background: url('../img/grain\ -\ \ Tomasz\ Filipek._croppedjpg.jpg')
 }
 
 .overlay-jumbo {

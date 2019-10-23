@@ -1,9 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Jumbo from '../components/Jumbo';
 
 const Products = () => {
     return (
         <div>
+
             <Layout>
                 <h1>
                     Producten
