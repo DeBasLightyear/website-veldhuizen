@@ -3,7 +3,7 @@
 .hero-image-farm { 
     background: url('../img/farm_cropped.jpg') no-repeat bottom;
     background-size: cover;
-    color: #ccc;
+    color: color(textLight, base);
     height: 100%;
     position: relative;
     z-index: -2;

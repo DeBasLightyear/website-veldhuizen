@@ -1,10 +1,15 @@
 @import './constants.scss';
 
 .jumbotron-base {
-    color: #ccc;
+    color: color(textLight, base);
     height: 40rem;
     position: relative;
     z-index: -2;
+
+    h1 {
+        font-size: 5rem;
+        text-transform: lowercase;
+    }
 }
 
 .jumbotron-farm {
@@ -21,7 +26,7 @@
 
 .jumbotron-desk {
     @extend .jumbotron-base;
-    background: url('../img/beverage\ cropped.jpg') no-repeat bottom;
+    background: url('../img/beverage\ cropped.jpg') no-repeat right bottom;
     background-size: cover;
 }
 

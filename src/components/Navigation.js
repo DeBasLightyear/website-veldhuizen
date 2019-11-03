@@ -21,7 +21,7 @@ const Navigation = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
+                <Nav className="navigation d-flex justify-content-around w-75">
                     <Nav.Item><NavLink to="/">Home</NavLink></Nav.Item>
                     <Nav.Item><NavLink to="/AboutUs">Over ons</NavLink></Nav.Item>
                     <Nav.Item><NavLink to="/Products">Producten</NavLink></Nav.Item>

@@ -1,9 +1,8 @@
 import React from 'react';
 import Jumbrotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
 
 const Jumbo = ({jumboBackground, headerText}) => {
-    const cssClass = `jumbo ${jumboBackground}`
+    const cssClass = `jumbo ${jumboBackground} d-flex align-items-center justify-content-center`
     
     return (
         <Jumbrotron
@@ -11,9 +10,7 @@ const Jumbo = ({jumboBackground, headerText}) => {
             className={cssClass}
         >
             <div className="overlay overlay-jumbo"></div>
-            <Container>
-                <h1>{`${headerText}`}</h1>
-            </Container>       
+            <h1>{`${headerText}`}</h1>
         </Jumbrotron>
     )
 }
