@@ -6,8 +6,6 @@ import Contact from './Pages/Contact';
 import AboutUs from './Pages/AboutUs';
 import Error from './Pages/Error';
 import Navigation from './components/Navigation';
-import Layout from './components/Layout';
-import HeroImage from './components/HeroImage';
 import './css/styles.min.css';
 
 function App() {

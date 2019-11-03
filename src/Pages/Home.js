@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 
 const Home = () => {
     return (
-        <div class="container-fluid h-100 p-0">
+        <div className="container-fluid h-100 p-0">
             <HeroImage />
             <Layout>
                 <h1>

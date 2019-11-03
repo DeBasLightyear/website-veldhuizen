@@ -5,7 +5,11 @@ import logoNoText from '../img/logo_transparant_notext_small.png';
 
 const Navigation = () => {
     return (
-        <Navbar fixed="top" bg="dark" expand="sm" className="navbar-default">
+        <Navbar
+            fixed="top"
+            expand="sm"
+            className="navbar-default nav-transparent"
+        >
             <Navbar.Brand>
                 <NavLink to="/">
                     <img

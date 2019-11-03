@@ -1,9 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Jumbo from '../components/Jumbo';
 
 const Contact = () => {
     return (
         <div>
+            <Jumbo 
+                jumboBackground={"jumbotron-desk"}
+                headerText={"Contact"}
+            />
             <Layout>
                 <h1>
                     Contact

@@ -5,7 +5,10 @@ import Jumbo from '../components/Jumbo';
 const Products = () => {
     return (
         <div>
-            <Jumbo />
+            <Jumbo 
+                jumboBackground={"jumbotron-grain"}
+                headerText={"Onze producten"}
+            />
             <Layout>
                 <h1>
                     Producten
