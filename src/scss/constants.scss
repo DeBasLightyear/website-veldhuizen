@@ -11,9 +11,14 @@ $colors: (
         dark: #0037c3
     ),
     textLight: (
-        base: #ccc,
+        base: rgb(240, 240, 240),
         light: white,
         dark: lightgrey
+    ),
+    textDark: (
+        base: #383838,
+        light: #4D4D4D,
+        dark: #000000
     )
 );
 

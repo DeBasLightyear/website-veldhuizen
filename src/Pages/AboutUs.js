@@ -6,7 +6,7 @@ const AboutUs = () => {
     return (
         <div>
             <Jumbo
-                jumboBackground="jumbotron-bunny"
+                jumboBackground="jumbotron-grass"
                 headerText="Over ons"
             />
             <Layout>

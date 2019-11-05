@@ -36,6 +36,12 @@
     background-size: cover;
 }
 
+.jumbotron-grass {
+    @extend .jumbotron-base;
+    background: url('../img/grass_cropped.jpg') no-repeat bottom;
+    background-size: cover;
+}
+
 .overlay-jumbo {
     background-color: #000;
     opacity: 0.3;
