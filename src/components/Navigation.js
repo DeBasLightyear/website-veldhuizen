@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import logoNoText from '../img/logo_transparant_notext_small.png';
 
 class Navigation extends Component {
@@ -15,7 +15,7 @@ class Navigation extends Component {
     }
 
     updateNavbarTransparency(){
-        window.scrollY <= 150 ? this.setState({ isNavTransparent : true }) : this.setState({ isNavTransparent : false });
+        window.scrollY <= 250 ? this.setState({ isNavTransparent : true }) : this.setState({ isNavTransparent : false });
     }
 
     componentDidMount(){
@@ -30,31 +30,33 @@ class Navigation extends Component {
         const visibility = this.state.isNavTransparent ? "nav-transparent" : "nav-colored";
 
         return (
-            <Navbar
-                fixed="top"
-                expand="sm"
-                className={`navbar-default ${visibility}`}
-                id="navigation-bar"
-            >
-                <Navbar.Brand>
-                    <NavLink to="/">
-                        <img
-                            src={logoNoText}
-                            alt="Veldhuizen Perspakket"
-                            className="w-25"
-                        />
-                    </NavLink>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="navigation d-flex justify-content-around w-75">
-                        <Nav.Item><NavLink to="/">Home</NavLink></Nav.Item>
-                        <Nav.Item><NavLink to="/AboutUs">Over ons</NavLink></Nav.Item>
-                        <Nav.Item><NavLink to="/Products">Producten</NavLink></Nav.Item>
-                        <Nav.Item><NavLink to="/Contact">Contact</NavLink></Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <Container>
+                <Navbar
+                    fixed="top"
+                    expand="sm"
+                    className={`navbar-default ${visibility}`}
+                    id="navigation-bar"
+                >
+                    <Navbar.Brand>
+                        <NavLink to="/">
+                            <img
+                                src={logoNoText}
+                                alt="Veldhuizen Perspakket"
+                                className="w-25"
+                            />
+                        </NavLink>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="navigation d-flex justify-content-around w-75">
+                            <Nav.Item><NavLink to="/">Home</NavLink></Nav.Item>
+                            <Nav.Item><NavLink to="/AboutUs">Over ons</NavLink></Nav.Item>
+                            <Nav.Item><NavLink to="/Products">Producten</NavLink></Nav.Item>
+                            <Nav.Item><NavLink to="/Contact">Contact</NavLink></Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Container>
         )
     }
 } 
