@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Jumbo from '../components/Jumbo';
 import Card from '../components/Card';
-import standInPicture from '../img/stand_in_picture.jpg';
+import standInPicture from '../img/stand_in_picture2.jpg';
 
 const getNewProduct = (name, description, picture) => {
     return { name, description, picture }
@@ -36,20 +36,15 @@ const Products = () => {
         <div>
             <Jumbo 
                 jumboBackground={"jumbotron-grain"}
-                headerText={"Onze producten"}
+                headerText={"Producten"}
             />
             <Layout>
-                <h1>
-                    Producten
-                </h1>
-                <p>
-                    Een product, levering, goed of artikel in economische zin is een tastbare zaak met een bepaalde waarde. Producten kunnen worden aangeboden op de markt om aan een vraag te voldoen. Naast producten bestaan er ook diensten en werken.
-                </p>
-                {products.map(item =>
+                {products.map((item, index) =>
                         <Card 
                             title={item.name}
                             description={item.description}
                             picture={item.picture}
+                            picturePosition={index % 2 === 0 ? 'right' : 'left'}
                         />
                     )}
             </Layout>

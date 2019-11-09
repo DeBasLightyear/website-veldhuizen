@@ -9,12 +9,9 @@ const Home = () => {
             <HeroImage />
             <div id="products">
                 <section className="container">
-                    <h1>Welkom</h1>
-                    <p>
-                        Korte introductietekst over wat het bedrijf precies doet. Niet te veel uitweiden, want er moet ook nog wat overblijven voor de "Over ons" pagina.
-                    </p>
                     <h1>Wat doen wij</h1>
                     <p>
+                        Korte introductietekst over wat het bedrijf precies doet. Niet te veel uitweiden, want er moet ook nog wat overblijven voor de "Over ons" pagina.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper mollis dui, sit amet varius risus feugiat et. Integer consequat, diam et scelerisque euismod, nunc neque condimentum nibh, congue cursus risus justo nec eros. Pellentesque ac lacus elementum enim dictum maximus. Morbi nec erat a lectus varius pellentesque et eget eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et vulputate enim. Pellentesque lobortis magna risus, sit amet euismod diam congue a. Cras lacinia nulla et odio ullamcorper, blandit suscipit lacus pharetra. Suspendisse mattis tortor ut varius tristique. Sed posuere urna libero, ut tempus purus iaculis eget. Nam ut ultricies justo, in blandit felis. Ut tellus tellus, malesuada eu mauris condimentum, efficitur varius tortor.
                         Donec sit amet pellentesque libero. Nunc rutrum lorem libero, et tincidunt enim luctus vel. Sed a neque a mauris vestibulum ultrices. Ut ipsum lorem, ultrices at elit non, ornare convallis ante. Duis hendrerit efficitur massa et suscipit. Sed ullamcorper ullamcorper nunc, in lobortis leo vestibulum et. Vivamus vitae quam pretium leo dapibus rutrum. Nunc orci mi, tempor nec metus sit amet, interdum vehicula sem. Pellentesque varius dui pretium ipsum tincidunt sagittis. Sed nec lorem congue, rutrum erat eget, sagittis nisl. Donec non consequat nulla, ac dictum sem. Sed non lacus vel leo condimentum gravida vitae vitae ante.
                         Nulla consequat mauris quis lectus mollis, ut suscipit quam euismod. Phasellus suscipit ornare arcu, vel ullamcorper odio porttitor id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eget nisi augue. Proin et pulvinar odio, eget pellentesque ipsum. Suspendisse potenti. Nam tellus enim, lacinia ornare condimentum in, pretium sit amet nulla. Nam sed dapibus nisl, at tincidunt quam. Sed faucibus mauris ac elit vehicula, vitae egestas tortor pharetra. Quisque vitae faucibus lorem, at efficitur nibh. Ut in mi gravida, tincidunt lacus vitae, mattis turpis. Nullam aliquam vel elit eget faucibus.

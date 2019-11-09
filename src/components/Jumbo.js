@@ -10,7 +10,7 @@ const Jumbo = ({jumboBackground, headerText}) => {
             className={cssClass}
         >
             <div className="overlay overlay-jumbo"></div>
-            <h1>{`${headerText}`}</h1>
+            <h1>{headerText}</h1>
         </Jumbrotron>
     )
 }

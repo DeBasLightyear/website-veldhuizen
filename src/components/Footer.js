@@ -27,19 +27,15 @@ const Footer = () => {
                     <div className="col-4">
                         <Row>
                             <h3 className="col-12 pl-0">Contactgegevens</h3>
-                            <div className="col-1 p-0 pt-1 d-flex align-items-center">
-                                <i className="fas fa-envelope"></i>
-                            </div>
                             <div className="col-11 pl-0 pt-1">
                                 <a href={`mailto:${constants.contact.email}`}>
+                                    <i className="fas fa-envelope mr-2"></i>
                                     {constants.contact.email}
                                 </a>
                             </div>
-                            <div className="col-1 p-0 pt-1 d-flex align-items-center">
-                                <i className="fas fa-phone-square-alt"></i>
-                            </div>
                             <div className="col-11 pl-0 pt-1">
                                 <a href={`tel:${constants.contact.telephoneInternational}`}>
+                                    <i className="fas fa-phone-square-alt  mr-2"></i>
                                     {constants.contact.telephoneDutch}
                                 </a>
                             </div>

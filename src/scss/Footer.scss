@@ -18,6 +18,15 @@
     img {
         height: 8rem;
     }
+
+    a {
+        color: color(textLight, base);
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: color(primary, base);
+    }
 }
 
 .overlay-footer{
