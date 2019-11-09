@@ -25,3 +25,47 @@ $colors: (
 @function color($color, $tone: 'base') {
     @return map-get(map-get($colors, $color), $tone);
   }
+
+//Animations to hide some imperfections and make things cooler
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-fill-mode: forwards;
+    opacity: 1;
+  }
+
+  // Base classes
+  .overlay-custom {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    padding: 0;
+    z-index: -1;
+  }
