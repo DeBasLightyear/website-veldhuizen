@@ -6,6 +6,7 @@ import Contact from './Pages/Contact';
 import AboutUs from './Pages/AboutUs';
 import Error from './Pages/Error';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import './css/styles.min.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Contact" component={Contact} />
           <Route component={Error} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </React.Fragment>
   );
