@@ -18,22 +18,32 @@ const Footer = () => {
                         />
                     </div>
                     <div className="col-4">
-                        <h4>Adres</h4>
-                        <p>{constants.contact.adress}</p>
-                        <p>{`${constants.contact.zipCode} ${constants.contact.city}`}</p>
+                        <Row>
+                            <h4 className="col-12 pl-0">Adres</h4>
+                            <div className="col-12 pl-0 pt-1">{constants.contact.adress}</div>
+                            <div className="col-12 pl-0 pt-1">{`${constants.contact.zipCode} ${constants.contact.city}`}</div>
+                        </Row>
                     </div>
                     <div className="col-4">
-                        <h3>Contactgegevens</h3>
-                        <p>
-                            <a href={`mailto:${constants.contact.email}`}>
-                                {constants.contact.email}
-                            </a>
-                        </p>
-                        <p>
-                            <a href={`tel:${constants.contact.telephoneInternational}`}>
-                                {constants.contact.telephoneDutch}
-                            </a>
-                        </p>
+                        <Row>
+                            <h3 className="col-12 pl-0">Contactgegevens</h3>
+                            <div className="col-1 p-0 pt-1 d-flex align-items-center">
+                                <i className="fas fa-envelope"></i>
+                            </div>
+                            <div className="col-11 pl-0 pt-1">
+                                <a href={`mailto:${constants.contact.email}`}>
+                                    {constants.contact.email}
+                                </a>
+                            </div>
+                            <div className="col-1 p-0 pt-1 d-flex align-items-center">
+                                <i className="fas fa-phone-square-alt"></i>
+                            </div>
+                            <div className="col-11 pl-0 pt-1">
+                                <a href={`tel:${constants.contact.telephoneInternational}`}>
+                                    {constants.contact.telephoneDutch}
+                                </a>
+                            </div>
+                        </Row>
                     </div>
                 </Row>
             </Container>

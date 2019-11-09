@@ -19,12 +19,12 @@
 
     a:hover{
         text-decoration: none;
-        color: color(textLight, dark);
+        color: color(textLight, light);
     }
       
     a::after{
       content: "";
-      background: color(textLight, dark);
+      background: color(textLight, light);
       mix-blend-mode: exclusion;
       width: calc(100% + 20px);
       height: 0;
