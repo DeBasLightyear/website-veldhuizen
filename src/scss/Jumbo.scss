@@ -2,44 +2,14 @@
 
 .jumbotron-base {
     color: color(textLight, base);
-    height: 40rem;
+    height: 30rem;
     position: relative;
-    z-index: -2;
+    z-index: 0;
 
     h1 {
         font-size: 4.5rem;
         text-transform: lowercase;
     }
-}
-
-.jumbotron-farm {
-    @extend .jumbotron-base;
-    background: url('../img/farm_cropped.jpg') no-repeat bottom;
-    background-size: cover; // the background size property only works when its under the background property for some reason...
-}
-
-.jumbotron-grain {
-    @extend .jumbotron-base;
-    background: url('../img/grain\ -\ Tomasz\ Filipek\ cropped.jpg') no-repeat bottom;
-    background-size: cover;
-}
-
-.jumbotron-desk {
-    @extend .jumbotron-base;
-    background: url('../img/beverage\ cropped.jpg') no-repeat right bottom;
-    background-size: cover;
-}
-
-.jumbotron-bunny {
-    @extend .jumbotron-base;
-    background: url('../img/bunny\ -\ Maria\ Tyutina_cropped_2.jpg') no-repeat bottom;
-    background-size: cover;
-}
-
-.jumbotron-grass {
-    @extend .jumbotron-base;
-    background: url('../img/grass_cropped.jpg') no-repeat bottom;
-    background-size: cover;
 }
 
 .overlay-jumbo {

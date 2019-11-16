@@ -1,12 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Jumbo from '../components/Jumbo';
+import backgroundDesk from '../img/beverage cropped.jpg';
 
 const Contact = () => {
     return (
         <div>
             <Jumbo 
-                jumboBackground={"jumbotron-desk"}
+                jumboBackground={backgroundDesk}
                 headerText={"Contact"}
             />
             <Layout>

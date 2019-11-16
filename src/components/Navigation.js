@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logoNoText from '../img/logo_transparant_notext_small.png';
+import logoNoText from '../img/logo_transparant_notext_small_white.png';
 
 class Navigation extends Component {
     constructor(props){
@@ -15,7 +15,7 @@ class Navigation extends Component {
     }
 
     updateNavbarTransparency(){
-        window.scrollY <= 250 ? this.setState({ isNavTransparent : true }) : this.setState({ isNavTransparent : false });
+        window.scrollY <= 160 ? this.setState({ isNavTransparent : true }) : this.setState({ isNavTransparent : false });
     }
 
     componentDidMount(){
