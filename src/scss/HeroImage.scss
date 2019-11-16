@@ -1,11 +1,9 @@
 @import './constants.scss';
 
-.hero-image-farm { 
-    background: url('../img/farm_cropped.jpg') no-repeat bottom;
-    background-size: cover;
+.hero-image {
     min-height: 100vh;
     position: relative;
-    z-index: -2;
+    z-index: 0;
   }
 
 .hero-logo {

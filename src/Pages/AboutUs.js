@@ -1,18 +1,24 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Jumbo from '../components/Jumbo';
+import LogoColored from '../img/logo - color small.png';
+import backgroundGrass from '../img/grass_cropped.jpg';
 
 const AboutUs = () => {
     return (
         <div>
             <Jumbo
-                jumboBackground="jumbotron-grass"
+                jumboBackground={backgroundGrass}
                 headerText="Over ons"
             />
             <Layout>
-                <h1>
-                    Over ons
-                </h1>
+                <div className="d-flex justify-content-center">
+                    <img
+                        src={LogoColored}
+                        className="w-50"
+                        alt="Veldhuizen Perpak"
+                    />
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper mollis dui, sit amet varius risus feugiat et. Integer consequat, diam et scelerisque euismod, nunc neque condimentum nibh, congue cursus risus justo nec eros. Pellentesque ac lacus elementum enim dictum maximus. Morbi nec erat a lectus varius pellentesque et eget eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et vulputate enim. Pellentesque lobortis magna risus, sit amet euismod diam congue a. Cras lacinia nulla et odio ullamcorper, blandit suscipit lacus pharetra. Suspendisse mattis tortor ut varius tristique. Sed posuere urna libero, ut tempus purus iaculis eget. Nam ut ultricies justo, in blandit felis. Ut tellus tellus, malesuada eu mauris condimentum, efficitur varius tortor.
                     Donec sit amet pellentesque libero. Nunc rutrum lorem libero, et tincidunt enim luctus vel. Sed a neque a mauris vestibulum ultrices. Ut ipsum lorem, ultrices at elit non, ornare convallis ante. Duis hendrerit efficitur massa et suscipit. Sed ullamcorper ullamcorper nunc, in lobortis leo vestibulum et. Vivamus vitae quam pretium leo dapibus rutrum. Nunc orci mi, tempor nec metus sit amet, interdum vehicula sem. Pellentesque varius dui pretium ipsum tincidunt sagittis. Sed nec lorem congue, rutrum erat eget, sagittis nisl. Donec non consequat nulla, ac dictum sem. Sed non lacus vel leo condimentum gravida vitae vitae ante.
