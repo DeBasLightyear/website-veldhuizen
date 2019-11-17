@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 const ProductCard = ({ title, description, picture, fillWidth = false }) => {   
     const image = (
         <img
-            className="card-image-top"
+            className="card-image-bottom"
             src={picture}
             alt="afbeelding product"
         />
@@ -13,11 +13,11 @@ const ProductCard = ({ title, description, picture, fillWidth = false }) => {
     return (
         <div className={`col-sm-12 col-md-${fillWidth ? 12 : 6} col-xl-${fillWidth ? 12 : 4}`}>
             <Card className="mt-3 mb-3 product-card">
-                {picture ? image : ""}
+                <h4 className="card-header">{title}</h4>
                 <div className="card-body">
-                    <h4 className="card-title">{title}</h4>
                     <p className="card-text">{description}</p>
                 </div>
+                {picture ? image : ""}
             </Card>
         </div>
     )
