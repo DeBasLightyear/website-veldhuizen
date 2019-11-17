@@ -12,10 +12,15 @@ class Navigation extends Component {
 
         // Binding methods
         this.updateNavbarTransparency = this.updateNavbarTransparency.bind(this);
+        this.scrollToTop = this.scrollToTop.bind(this);
     }
 
     updateNavbarTransparency(){
         window.scrollY <= 160 ? this.setState({ isNavTransparent : true }) : this.setState({ isNavTransparent : false });
+    }
+
+    scrollToTop(){
+        window.scrollTo(0, 0)
     }
 
     componentDidMount(){
