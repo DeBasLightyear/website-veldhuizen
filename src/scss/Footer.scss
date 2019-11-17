@@ -5,19 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 1rem;
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: .3rem;
     border-bottom-left-radius: .3rem;
     height: 14rem;
-    background: url('../img/floor_boards_cropped.jpg') no-repeat bottom;
-    background-size: cover;
     position: relative;
-    z-index: -2;
-
-    img {
-        height: 8rem;
-    }
+    z-index: 0;
 
     a {
         color: color(textLight, base);
