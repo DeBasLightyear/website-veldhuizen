@@ -69,3 +69,15 @@ $colors: (
     padding: 0;
     z-index: -1;
   }
+
+  .card-base {
+    box-shadow: 2px 2px 3px rgba(66, 66, 66, 0.2);
+  }
+
+  .header-base {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+  }
+
+  .text-base {
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  }
