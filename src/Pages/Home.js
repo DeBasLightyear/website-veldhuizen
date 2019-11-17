@@ -1,14 +1,15 @@
 import React from 'react';
-import HeroImage from '../components/HeroImage';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import HeroImage from '../components/HeroImage';
+import TextCard from '../components/TextCard';
 
 const Home = () => {
     return (
         <div>
             <HeroImage />
-            <div id="products">
-                <section className="container">
+            <Container>
+                <TextCard>
                     <h1>Wat doen wij</h1>
                     <p>
                         Korte introductietekst over wat het bedrijf precies doet. Niet te veel uitweiden, want er moet ook nog wat overblijven voor de "Over ons" pagina.
@@ -30,8 +31,8 @@ const Home = () => {
                     <p>
                         Google Maps kaart hier
                     </p>
-                </section>
-            </div>
+                </TextCard>
+            </Container>
         </div>
     )
 }

@@ -5,7 +5,7 @@ body, html {
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    font-family: 'Open Sans', "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -13,11 +13,24 @@ body, html {
     background-color: rgb(242, 242, 242) !important;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  @extend .header-base;
+}
+h2 {
+  @extend .header-base;
+}
+h3 {
+  @extend .header-base;
+}
+h4 {
+  @extend .header-base;
+}
+
+p {
+  @extend .text-base;
 }
 
 a {
+  @extend .text-base;
   text-decoration: none;
 }

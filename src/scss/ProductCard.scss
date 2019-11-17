@@ -1,7 +1,8 @@
 @import './constants.scss';
 
 .product-card {
-    box-shadow: 2px 2px 3px rgba(66, 66, 66, 0.2);
+    @extend .card-base;
+    height: 95%;
 
     img {
         width: 100%;

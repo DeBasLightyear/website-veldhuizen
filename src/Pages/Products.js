@@ -1,6 +1,6 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
-import Layout from '../components/Layout';
+import Container from 'react-bootstrap/Container';
 import Jumbo from '../components/Jumbo';
 import ProductCard from '../components/ProductCard';
 import strawPicture from '../img/straw.jpg';
@@ -43,7 +43,7 @@ const Products = () => {
                 jumboBackground={backgroundGrain}
                 headerText={"Producten"}
             />
-            <Layout>
+            <Container>
                 <Row>
                     <ProductCard
                         title={mainProduct.name}
@@ -58,7 +58,7 @@ const Products = () => {
                             />
                         )}
                 </Row>
-            </Layout>
+            </Container>
         </div>
     )
 }
