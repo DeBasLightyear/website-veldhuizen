@@ -3,10 +3,12 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Jumbo from '../components/Jumbo';
 import ProductCard from '../components/ProductCard';
+import TextCard from '../components/TextCard';
 import strawPicture from '../img/straw.jpg';
 import hayPicture from '../img/grass_dry.jpg';
 import coconutPicture from '../img/coconut.jpg';
 import backgroundGrain from '../img/grain - Tomasz Filipek cropped.jpg';
+import placeHolderPicture from '../img/stand_in_picture2.jpg';
 
 const getNewProduct = (name, description, picture) => {
     return { name, description, picture }
@@ -45,11 +47,17 @@ const Products = () => {
             />
             <Container>
                 <Row>
-                    <ProductCard
-                        title={mainProduct.name}
-                        description={mainProduct.description}
-                        fillWidth={true}
-                    />
+                    <div className="col-md-6">
+                        <h1>{mainProduct.name}</h1>
+                        <p>{mainProduct.description}</p>
+                    </div>
+                    <div className="col-md-6">
+                        <img
+                            src={placeHolderPicture}
+                            alt="Foto"
+                            className="img-fluid"
+                        />
+                    </div>
                     {products.map((item) =>
                             <ProductCard 
                                 title={item.name}
@@ -58,6 +66,7 @@ const Products = () => {
                             />
                         )}
                 </Row>
+                    
             </Container>
         </div>
     )

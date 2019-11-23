@@ -3,8 +3,21 @@
 .product-card {
     @extend .card-base;
     height: 95%;
+    background-color: white;
 
     img {
         width: 100%;
     }
+}
+
+.minitron {
+    color: color(textLight, base);
+    position: relative;
+    height: 10rem;
+    z-index: 0;
+}
+
+.overlay-mini {
+    @extend .overlay-custom;
+    opacity: 0.3;
 }
