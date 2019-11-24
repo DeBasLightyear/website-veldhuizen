@@ -8,6 +8,7 @@ import strawPicture from '../img/straw.jpg';
 import hayPicture from '../img/grass_dry.jpg';
 import coconutPicture from '../img/coconut.jpg';
 import rabbitPicture from '../img/bunny - Maria Tyutina_cropped_2.jpg';
+import ideaPicture from '../img/Burak K from Pexels.jpg';
 import backgroundGrain from '../img/grain - Tomasz Filipek cropped.jpg';
 import placeHolderPicture from '../img/stand_in_picture2.jpg';
 
@@ -35,6 +36,11 @@ const products = [
         "Konijnenvoer",
         "Linnaeus plaatste het konijn in 1758 als Lepus cuniculus in het geslacht Lepus, samen met Lepus timidus (sneeuwhaas), Lepus capensis (Kaapse haas) en Lepus brasiliensis (tapeti of Braziliaans konijn).[2] De Europese haas was Linnaeus toen nog onbekend en die is daarom op dat moment niet in het geslacht Lepus of ergens anders te vinden.[3] De naam 'cuniculus' ontleende Linnaeus aan diverse eerdere auteurs, door hem geciteerd (Conrad Gesner, Ulisse Aldrovandi, Jan Jonston en John Ray), die de naam als geslachtsnaam voor het konijn hadden gebruikt.",
         rabbitPicture
+    ),
+    getNewProduct(
+        "Uw product",
+        "Foobar",
+        ideaPicture
     )
 ];
 
@@ -52,25 +58,29 @@ const Products = () => {
                 headerText={"Producten"}
             />
             <Container>
-                <Row>
-                    <div className="col-md-6">
-                        <h1>{mainProduct.name}</h1>
+                <Row
+                    className="d-flex justify-content-center"
+                >
+                    <div className="col-md-12 col-lg-6">
+                        <h3>{mainProduct.name}</h3>
                         <p>{mainProduct.description}</p>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-12 col-lg-6 d-flex align-items-end">
                         <PolaroidCard 
                             picture={placeHolderPicture}
+                            rotation={2}
                             title="Een algemeen voorbeeld van een product"
                         />
                     </div>
                     <div className="col-12">
                         <h3>Een aantal voorbeelden...</h3>
                     </div>
-                    {products.map((item) =>
+                    {products.map((item, index) =>
                             <ProductCard 
                                 title={item.name}
                                 description={item.description}
                                 picture={item.picture}
+                                key={index + 1}
                             />
                         )}
                 </Row>
